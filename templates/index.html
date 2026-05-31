@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapClass | AI Powered Attendance System</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="{{ url_for('static', filename='img/app_logo.png') }}" alt="SnapClass Logo" style="height: 32px;">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" style="height:32px alt='SnapClass Logo'">
             <div class="logo-text">SnapClass</div>
+
         </div>
         <div class="nav-links">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
             <a href="#features">Features</a>
             <a href="#journey">Journey</a>
             <a href="#tech">Tech Stack</a>
         </div>
         <div class="nav-cta">
-            <a href="https://snapclass-ai-attendance-0505.streamlit.app" class="btn-pill">Start AI Attendance <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+            <a href="https://snapclass-ai-attendance-0505.streamlit.app/" class="btn-pill">
+                Start AI Attendance
+                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2">
-                    <path d="M9 5l7 7-7 7" />
-                </svg></a>
+                    <path d="M9 5l7 7-7 7" /></svg>
+            </a>
         </div>
+
     </nav>
     <header class="hero">
         <div class="badge">
             Welcome to SnapClass
         </div>
-        <h1>AI Powered<br>Attendance <span>System</span></h1>
+        <h1> AI Powered <br> Attendance <br><span> System </span></h1>
         <p>Revolutionizing the classroom with next-gen computer vision and voice biometrics. Trusted by educators for
-            speed, accuracy, and security.</p>
+            speed, accuracy, and security.
+        </p>
         <div class="hero-actions">
-            <a href="https://snapclass-ai-attendance-0505.streamlit.app" class="btn-cta">Start AI Attendance <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <a href="https://snapclass-ai-attendance-0505.streamlit.app/" class="btn-cta">Start AI Attendance <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="3">
                     <path d="M9 5l7 7-7 7" />
                 </svg></a>
@@ -42,11 +47,11 @@
         </div>
         <div class="floating-card card-left">
             <div class="card-img"><img
-                    src="{{ url_for('static', filename='img/demo/attendance_record.jpeg') }}"
+                    src="{{ url_for('static', filename='img/demo/attendance_report.jpeg') }}"
                     alt="Snap Student"></div>
         </div>
         <div class="floating-card card-right">
-            <div class="card-img"><img src="{{ url_for('static', filename='img/demo/snap-main_page.jpeg') }}"
+            <div class="card-img"><img src="{{ url_for('static', filename='img/demo/main_page.jpeg') }}"
                     alt="Snap Landing"></div>
         </div>
     </header>
@@ -73,10 +78,11 @@
             </div>
         </div>
     </section>
-    <section id="journey" class="teacher-flow">
+     <section id="journey" class="teacher-flow">
         <div class="flow-container">
             <div class="section-tag" style="text-align: center; display: block; margin-bottom: 40px;">— Workflow —</div>
             <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px;">The Teacher's Journey</h2>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Step 01</span>
@@ -89,6 +95,7 @@
                         alt="Login Portal">
                 </div>
             </div>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Step 02</span>
@@ -101,6 +108,7 @@
                         alt="Teacher Dashboard">
                 </div>
             </div>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Step 03</span>
@@ -113,6 +121,7 @@
                         alt="Create Course">
                 </div>
             </div>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Step 04</span>
@@ -121,10 +130,11 @@
                         single class photo in milliseconds.</p>
                 </div>
                 <div class="flow-image">
-                    <img src="{{ url_for('static', filename='img/demo/attendance_record.jpeg') }}"
+                    <img src="{{ url_for('static', filename='img/demo/student_login_page.jpeg') }}"
                         alt="FaceID Attendance">
                 </div>
             </div>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Step 05</span>
@@ -137,6 +147,7 @@
                         alt="Voice Attendance">
                 </div>
             </div>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Step 06</span>
@@ -145,7 +156,7 @@
                         long-term attendance trends.</p>
                 </div>
                 <div class="flow-image">
-                    <img src="{{ url_for('static', filename='img/demo/attendance_report') }}"
+                    <img src="{{ url_for('static', filename='img/demo/attendance_record.jpeg') }}"
                         alt="Records Management">
                 </div>
             </div>
@@ -197,11 +208,12 @@
             </div>
         </div>
     </section>
-    <section id="student-journey" class="teacher-flow" style="background: white;">
+     <section id="student-journey" class="teacher-flow" style="background: white;">
         <div class="flow-container">
             <div class="section-tag" style="text-align: center; display: block; margin-bottom: 40px;">— Workflow —
             </div>
             <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px;">The Student's Journey</h2>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Phase 01</span>
@@ -210,10 +222,11 @@
                         teachers. No tedious sign-up forms.</p>
                 </div>
                 <div class="flow-image">
-                    <img src="{{ url_for('static', filename='img/demo/teacher_login.jpeg') }}"
+                    <img src="{{ url_for('static', filename='img/demo/qr_link_join.jpeg') }}"
                         alt="Student Enrollment">
                 </div>
             </div>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Phase 02</span>
@@ -222,10 +235,11 @@
                         all future class sessions.</p>
                 </div>
                 <div class="flow-image">
-                    <img src="{{ url_for('static', filename='img/demo/subject_enrollment.jpeg') }}"
+                    <img src="{{ url_for('static', filename='img/demo/voice_attendance.jpeg') }}"
                         alt="Biometric Registration">
                 </div>
             </div>
+
             <div class="flow-step">
                 <div class="flow-content">
                     <span class="step-badge">Phase 03</span>
@@ -234,18 +248,20 @@
                         receive real-time updates.</p>
                 </div>
                 <div class="flow-image">
-                    <img src="{{ url_for('static', filename='img/demo/student_regiater_page.jpeg') }}"
+                    <img src="{{ url_for('static', filename='img/demo/student_register_page.jpeg') }}"
                         alt="Student Dashboard">
                 </div>
             </div>
         </div>
     </section>
+
     <section class="purple-section">
         <h2>Ready to upgrade your classroom?</h2>
         <p>Join thousands of educators who have simplified their day with SnapClass. The smartest AI powered
             attendance
             system is just one click away.</p>
         <a href="https://snapclass-ai-attendance-0505.streamlit.app/" class="btn-white">Start AI Attendance Now</a>
+
     </section>
     <footer class="main-footer">
         <div class="footer-grid">
@@ -275,6 +291,7 @@
                     <li><a href="#features">FaceID Scan</a></li>
                 </ul>
             </div>
+
             <div class="footer-links">
                 <h4>Company</h4>
                 <ul>
@@ -286,9 +303,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SnapClass AI. Built with ❤️ for educators everywhere.</p>
+            <p>&copy; 2026 SnapClass AI. Built with 🤍 for educators everywhere.</p>
         </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
+    

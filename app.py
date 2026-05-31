@@ -5,4 +5,4 @@ def home():
     return render_template('index.html')
 
 if __name__ == '__maim__':
-    app.run(debug=True,port=5002)
+    app.run(debug=True)
